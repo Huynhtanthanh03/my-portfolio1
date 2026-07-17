@@ -42,3 +42,81 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+.lantern{
+
+    width:400px;
+    height:400px;
+
+    margin:50px auto;
+
+    position:relative;
+
+    animation: quay 10s linear infinite;
+
+}
+
+
+.lantern img{
+
+    width:120px;
+    height:120px;
+
+    object-fit:cover;
+
+    position:absolute;
+
+    top:140px;
+    left:140px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px gray;
+
+}
+
+
+
+/* xếp 6 mặt đèn */
+
+.lantern img:nth-child(1){
+    transform:rotate(0deg) translateY(-150px);
+}
+
+
+.lantern img:nth-child(2){
+    transform:rotate(60deg) translateY(-150px);
+}
+
+
+.lantern img:nth-child(3){
+    transform:rotate(120deg) translateY(-150px);
+}
+
+
+.lantern img:nth-child(4){
+    transform:rotate(180deg) translateY(-150px);
+}
+
+
+.lantern img:nth-child(5){
+    transform:rotate(240deg) translateY(-150px);
+}
+
+
+.lantern img:nth-child(6){
+    transform:rotate(300deg) translateY(-150px);
+}
+
+
+
+@keyframes quay{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
